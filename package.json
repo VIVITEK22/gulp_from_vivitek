@@ -14,6 +14,7 @@
   "description": "",
   "devDependencies": {
     "browser-sync": "^3.0.2",
+    "css-loader": "^7.1.2",
     "del": "^7.1.0",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^9.0.0",
@@ -36,13 +37,17 @@
     "gulp-webp-html-nosvg": "^1.1.1",
     "gulp-webpcss": "^1.1.1",
     "gulp-zip": "^6.0.0",
+    "jquery": "^3.7.1",
+    "mini-css-extract-plugin": "^2.9.0",
     "sass": "^1.77.8",
+    "swiper": "^11.1.9",
     "vinyl-ftp": "^0.6.1",
     "webp-converter": "2.2.3",
     "webpack": "^5.93.0",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "gulp-imagemin": "^7.1.0"
+    "gulp-imagemin": "^7.1.0",
+    "intl-tel-input": "^24.6.0"
   }
 }

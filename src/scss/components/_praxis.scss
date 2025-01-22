@@ -1,0 +1,120 @@
+.praxis {
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 8px;
+    text-align: end;
+
+    &-wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 34px;
+      padding: 0 30px;
+    }
+
+    &-value {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    &-text {
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    &-desc {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      text-align: end;
+    }
+  }
+
+  &__list {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 18px;
+    background: rgb(243, 243, 243);
+
+    &-image {
+      position: absolute;
+      bottom: -6px;
+      left: -70px;
+    }
+
+    &-title {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21px;
+      margin-bottom: 14px;
+      text-align: end;
+    }
+
+    &-text {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 23px;
+      text-align: end;
+    }
+
+    &:first-of-type {
+      height: 168px;
+      background: url('@img/praxis-item-bg.png') no-repeat center;
+
+      & > .praxis__item-content {
+        max-width: 200px;
+        padding-top: 31px;
+        padding-bottom: 16px;
+        padding-right: 20px;
+        box-sizing: content-box;
+      }
+    }
+
+    &:nth-of-type(2) {
+      height: 240px;
+      padding: 26px 0 43px 20px;
+      justify-content: flex-start;
+
+      & .praxis__item-title {
+        text-align: start;
+      }
+
+      & .praxis__item-text {
+        text-align: start;
+        max-width: 209px;
+      }
+
+      & .praxis__item-image {
+        bottom: -3px;
+        right: -42px;
+        left: unset;
+      }
+    }
+    &:last-of-type {
+      height: 195;
+      padding: 34px 20px 32px;
+
+      & .praxis__item-text {
+        max-width: 255px;
+      }
+
+      & .praxis__item-image {
+        bottom: 0;
+        left: -157px;
+      }
+    }
+  }
+}

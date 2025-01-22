@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"F.A.Q",
+"stylesrc":"@scss/style.scss"
+})
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      @@include('html/header.html')
+      <div class="back"></div>
+      <main class="main">
+        @@include('html/faq/title.html')
+        @@include('html/faq/questions.html')
+        @@include('html/faq/reviews.html')
+        @@include('html/faq/numbers.html')
+      </main>
+      @@include('html/footer.html')
+    </div>
+  </div>
+  <script src="@js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 30px;
+  }
+
+  &__logo {
+    &-text {
+      font-weight: 900;
+      font-size: 20px;
+      font-style: italic;
+      color: #626262
+    }
+  }
+
+  &__mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -200%;
+    width: 390px;
+    z-index: 6;
+    background-color: #fff;
+    padding: 30px;
+    transition: all 0.5s;
+
+    & .header__logo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+
+      & > .header__mobile-close {
+        cursor: pointer;
+      }
+
+      & > .header__mobile-close > span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #626262;
+        transform: rotate(45deg);
+
+        &:last-child {
+          transform: rotate(-45deg) translate(1.7px, -2.7px);
+        }
+      }
+    }
+
+    & .header__logo {
+      display: block;
+
+      & > .header__logo-text {
+        font-size: 40px;
+      }
+    }
+
+    & .header__nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      padding-bottom: 30px;
+
+      & > .header__nav-item {
+        font-weight: 500;
+        font-size: 22px;
+      }
+    }
+
+    & > .header__data-list {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      padding-top: 30px;
+
+      & > .header__data-item {
+        font-weight: 500;
+        font-size: 22px;
+      }
+    }
+
+    &--active {
+      right: 0;
+    }
+  }
+
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 4;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: #fff;
+
+    &--active {
+      position: fixed;
+      top: 26px;
+      padding: 14px 11px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 4px 0px rgba(34, 60, 80, 0.2);
+    }
+
+
+
+    &-span {
+      display: block;
+      width: 36px;
+      height: 4px;
+      background-color: #626262;
+    }
+  }
+}

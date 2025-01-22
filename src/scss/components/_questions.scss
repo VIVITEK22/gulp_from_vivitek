@@ -1,0 +1,158 @@
+.questions {
+  margin: 0 10px;
+  padding: 35px 20px 45px 20px;
+  border: 1px dashed rgb(90, 176, 177);
+  border-radius: 18px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20.5px;
+    margin-bottom: 20.5px;
+  }
+
+  &__item {
+    &--active .questions__title-arrow {
+      transform: rotate(90deg);
+    }
+
+    &--active .questions__title-text {
+      font-weight: 600;
+    }
+
+    &--active &-title {
+      border-bottom: 1px solid #5AB0B1;
+    }
+
+    &:last-of-type &-title {
+      border: none;
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      cursor: pointer;
+      padding: 0 10px 19.5px 10px;
+      border-bottom: 1px solid rgb(194, 194, 194);
+      transition: all 0.3s;
+    }
+  }
+
+  &__title-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 320px;
+    transition: all 0.3s;
+  }
+
+  &__title-arrow {
+    width: 16px;
+    height: 22px;
+    flex-shrink: 0;
+    background: url("@img/arrow.svg") no-repeat center;
+    transition: all 0.3s;
+  }
+
+  &__item-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 16.5px 10px 29.5px 10px;
+    display: none;
+  }
+
+  &__link {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    text-decoration: underline;
+    text-align: center;
+  }
+}
+
+.faq__questions {
+  border: none;
+  border-radius: unset;
+  margin: 0 !important;
+  padding: 60px 20px 50px 20px;
+
+  & .questions__list {
+    margin-bottom: 0;
+  }
+
+  & .questions__item:last-of-type .questions__item-title {
+    border-bottom: 1px solid rgb(194, 194, 194);
+  }
+
+  & .questions__item--active:last-of-type .questions__item-title {
+    border-bottom: 1px solid #5AB0B1;
+  }
+
+  & .questions__banner {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    background: rgb(243, 243, 243);
+    padding: 30px 0;
+    margin-top: 60.5px;
+    margin-bottom: 52px;
+
+    &-title {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding-left: 30px;
+
+      &:first-of-type {
+        padding-left: 8px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+
+      &:first-of-type::before {
+        content: "";
+        display: block;
+        border: 2px solid rgb(90, 176, 177);
+        width: 16px;
+        margin-bottom: 4px;
+
+      }
+    }
+
+    &-text {
+      max-width: 252px;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 28px;
+      margin-left: 30px;
+
+      &:first-of-type {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-image {
+      position: absolute;
+      bottom: 0;
+      right: -40px;
+    }
+  }
+}

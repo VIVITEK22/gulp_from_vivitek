@@ -1,0 +1,32 @@
+.title {
+  background: url("@img/title-bg.png") no-repeat center;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  &__text {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 42px;
+    max-width: 166px;
+    text-align: end;
+    margin-bottom: 16px;
+    font-style: italic;
+  }
+
+  &__desc {
+    text-align: end;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    max-width: 230px;
+  }
+}
+
+.faq__title {
+  background: url("@img/title-faq-bg.png") no-repeat center;
+  padding-top: 80px;
+}

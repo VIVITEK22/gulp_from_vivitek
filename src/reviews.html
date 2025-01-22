@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Отзывы",
+"stylesrc":"@scss/style.scss"
+})
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      @@include('html/header.html')
+      <div class="back"></div>
+      <main class="main">
+        @@include('html/reviews/title.html')
+        @@include('html/reviews/reviews.html')
+        @@include('html/questions.html')
+        @@include('html/reviews/numbers.html')
+      </main>
+      @@include('html/footer.html')
+    </div>
+  </div>
+  <script src="@js/main.js"></script>
+</body>
+
+</html>

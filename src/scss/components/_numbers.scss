@@ -1,0 +1,46 @@
+.numbers {
+  .reviews__numbers &__image {
+    background: url("@img/numbers2-bg.png") no-repeat;
+    background-position-x: -116px !important;
+    height: 269px;
+  }
+
+  .faq__numbers &__image {
+    background: url("@img/faq-numbers-bg.png") no-repeat;
+    background-position-x: -158px !important;
+    height: 230px;
+  }
+
+  &__image {
+    background: url("@img/numbers.png") no-repeat;
+    background-position-x: -231px !important;
+    height: 319px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 13px;
+  }
+
+  &__list {
+    padding: 11px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > span {
+      display: block;
+      width: 1px;
+      height: 50px;
+      background-color: #D2D2D2;
+    }
+  }
+
+  &__item-value {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__item-text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

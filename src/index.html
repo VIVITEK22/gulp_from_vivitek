@@ -7,9 +7,23 @@
 
 <body>
   <div class="wrapper">
-    @@include('html/header.html')
-    <main class="main"></main>
-    @@include('html/footer.html')
+    <div class="container">
+      @@include('html/header.html')
+      <div class="back"></div>
+      <main class="main">
+        @@include('html/info.html')
+        @@include('html/chart.html')
+        @@include('html/chat.html')
+        @@include('html/programs.html')
+        @@include('html/formats.html')
+        @@include('html/praxis.html')
+        @@include('html/reviews.html')
+        @@include('html/price.html')
+        @@include('html/questions.html')
+        @@include('html/numbers.html')
+      </main>
+      @@include('html/footer.html')
+    </div>
   </div>
   <script src="@js/main.js"></script>
 </body>

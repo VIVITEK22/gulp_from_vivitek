@@ -1,0 +1,41 @@
+.programs {
+  &__image {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 8px;
+    text-align: end;
+
+    &-wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 34px;
+      padding: 0 30px;
+    }
+
+    &-value {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    &-text {
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    &-desc {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      text-align: end;
+    }
+  }
+}
